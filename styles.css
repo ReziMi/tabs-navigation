@@ -1,0 +1,51 @@
+/* CSS styles for the tabbed content */
+body {
+    font-family: Arial, sans-serif;
+    background: url(./poe.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.tab-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.tab-button:hover {
+    background-color: darkslategray;
+}
+
+.tab-content div {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tab-content div:first-child {
+    display: block;
+}
+
+/* Add a class to style the active tab button */
+.active-tab {
+    background-color: darkred;
+    color: white;
+}
